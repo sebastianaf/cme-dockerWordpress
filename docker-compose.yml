@@ -17,6 +17,7 @@ services:
       - ./wordpress:/var/www/html
 
   cme-wordpress-db:
+    container_name: cme-wordpress-db
     image: mysql:5.7
     restart: always
     environment:
